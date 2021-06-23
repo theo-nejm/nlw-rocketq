@@ -13,6 +13,7 @@
         <!-- CSS-->
         <link rel="stylesheet" href="./styles/global.css">
         <link rel="stylesheet" href="./styles/room.css">
+        <link rel="stylesheet" href="./styles/modal.css">
     </head>
     <body>
         <div id="room" class="content">
@@ -75,9 +76,97 @@
                             </div>
 
                         </div>
+
+                        <div class="question-wrapper">
+                            
+                            <div class="question-content">
+                                <div class="user">
+                                    <img src="./assets/avatar.svg" alt="Avatar">
+                                </div>
+                                <div class="question">
+                                    <p>O conteúdo da rocket tá top!</p>
+                                </div>
+                            </div>
+
+                            <div class="actions">
+                                <a href="#">
+                                    <img src="./assets/check.svg" alt="Marcar como lida" class="check">
+                                    Marcar como lida
+                                </a>
+                                <a href="#" class="delete"> 
+                                    <img src="./assets/trash.svg" alt="Excluir pergunta">
+                                    Excluir
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="question-wrapper">
+                            
+                            <div class="question-content">
+                                <div class="user">
+                                    <img src="./assets/avatar.svg" alt="Avatar">
+                                </div>
+                                <div class="question">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore odit, at eveniet illum, ipsam tempora cupiditate beatae dignissimos, voluptas fuga corrupti deleniti voluptatum velit enim maxime consectetur. Accusantium, possimus.</p>
+                                </div>
+                            </div>
+    
+                            <div class="actions">
+                                <a href="#">
+                                    <img src="./assets/check.svg" alt="Marcar como lida" class="check">
+                                    Marcar como lida
+                                </a>
+                                <a href="#" class="delete"> 
+                                    <img src="./assets/trash.svg" alt="Excluir pergunta">
+                                    Excluir
+                                </a>
+                            </div>
+    
+                        </div>
+
+                        <div class="question-wrapper readed">
+                            
+                            <div class="question-content">
+                                <div class="user">
+                                    <img src="./assets/avatar.svg" alt="Avatar">
+                                </div>
+                                <div class="question">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+
+                            <div class="actions">
+                                <a href="#" class="delete"> 
+                                    <img src="./assets/trash.svg" alt="Excluir pergunta">
+                                    Excluir
+                                </a>
+                            </div>
+
+                        </div>
                     </div>
                 </section>
 
             </main>
+        </div>
+
+
+        <div class="modal-wrapper">
+            <div class="modal">
+                <h2>Excluir pergunta</h2>
+                <p>Tem certeza que você deseja excluir esta pergunta?</p>
+
+                <form action="">
+                    <label for="password" class="sr-only">Digite a sua senha admin</label>
+                    <input type="password" id="password" name="password" placeholder="Digite a senha">
+                
+                <div class="buttons">
+                    <div class="button grey">Canceclar</div>
+                    <button class="red">Sim, excluir</button>
+                </div>
+
+                </form>
+            </div>
+        </div>
     </body>
 </html>
