@@ -117,15 +117,15 @@ input, button, .button {
     height: 80vh;
     width: 50vw;
     
-    animation: moving-character 3.2s ease-in-out infinite alternate;
+    animation: moving-character 4.8s ease-in-out infinite alternate;
 }
 
 @keyframes moving-character {
     0% {
-        transform: translatey(.25vh) translateX(-.25vw) scale(1)
+        transform: translatey(-2vh) translateX(.5vw) scale(1.05)
     }
 
     100% {
-        transform: translateY(-.4vh) translateX(.4vw) scale(1.025)
+        transform: translateY(-4vh) translateX(-1vw) scale(1)
     }
 }
