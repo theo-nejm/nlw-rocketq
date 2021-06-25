@@ -1,0 +1,30 @@
+{
+  "name": "nlw-discover",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido durante a maratona Discover da Rocketseat para gerenciar perguntas anônimas de usuários direcionados ao dono da página.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon .",
+    "init-db": "node src/db/init.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Theo-Nejm/nlw-together-discover.git"
+  },
+  "keywords": [],
+  "author": "Theo Nejm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Theo-Nejm/nlw-together-discover/issues"
+  },
+  "homepage": "https://github.com/Theo-Nejm/nlw-together-discover#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "sqlite": "^4.0.23",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
