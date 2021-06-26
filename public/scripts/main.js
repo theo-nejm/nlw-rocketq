@@ -9,8 +9,6 @@ const modalButton = document.querySelector('.modal button')
 const checkButtons = document.querySelectorAll('a.check')
 const deleteButtons = document.querySelectorAll('a.delete')
 
-const roomId = document.getElementsById('room-id').value.replace('#', '')
-
 checkButtons.forEach(button => {button.addEventListener('click', handleClick)})
     
 deleteButtons.forEach(button => {button.addEventListener('click', event => handleClick(event, false))})
@@ -32,10 +30,4 @@ function handleClick(event, check = true) {
     modalButton.style.background = check ? "var(--blue)" : "var(--red)"
     
     modal.open()
-}
-
-function copyRoomId() {
-    roomId.select()
-    roomId.setSelectionRange(0, 100)
-    document.execCommand('copy')
 }
