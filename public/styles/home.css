@@ -114,18 +114,26 @@ input, button, .button {
 #background-img {
     position: absolute;
     left: -5rem;
-    height: 80vh;
+    height: 75vh;
     width: 50vw;
     
-    animation: moving-character 4.8s ease-in-out infinite alternate;
+    animation: moving-character 12s ease-in-out infinite;
 }
 
 @keyframes moving-character {
     0% {
-        transform: translatey(-2vh) translateX(.5vw) scale(1.05)
+        transform: translateY(-2vh) 
+        translateX(-.25vw) scale(1.025)
+        rotate(0deg)
     }
-
+    50% {
+        transform: translateY(-5vh) 
+        translateX(.8vw) scale(1)
+        rotate(-5deg)
+    }
     100% {
-        transform: translateY(-4vh) translateX(-1vw) scale(1)
+        transform: translateY(-2vh) 
+        translateX(-.25vw) scale(1.025)
+        rotate(0deg)
     }
 }

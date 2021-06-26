@@ -9,6 +9,8 @@ const modalButton = document.querySelector('.modal button')
 const checkButtons = document.querySelectorAll('a.check')
 const deleteButtons = document.querySelectorAll('a.delete')
 
+const roomId = document.getElementsById('room-id').value.replace('#', '')
+
 checkButtons.forEach(button => {button.addEventListener('click', handleClick)})
     
 deleteButtons.forEach(button => {button.addEventListener('click', event => handleClick(event, false))})
@@ -22,12 +24,18 @@ function handleClick(event, check = true) {
     const slug = check ? 'check' : 'delete'
 
     const form = document.querySelector('.modal form')
-    form.setAttribute('action', `/question/:${roomId}/:${questionId}/:${slug}`)
+    form.setAttribute('action', `/question/${roomId}/${questionId}/${slug}`)
 
     modalTitle.innerHTML = check ? "Marcar como lida" : "Excluir pergunta"
     modalDescription.innerHTML = check ? "Tem certeza que deseja marcar a pergunta como lida?" : "Tem certeza que deseja excluir esta pergunta?"
-    modalButton.innerHTML = check ? "Apagar pergunta" : "Sim, excluir"
+    modalButton.innerHTML = check ? "Marcar como lida" : "Sim, excluir"
     modalButton.style.background = check ? "var(--blue)" : "var(--red)"
     
     modal.open()
+}
+
+function copyRoomId() {
+    roomId.select()
+    roomId.setSelectionRange(0, 100)
+    document.execCommand('copy')
 }

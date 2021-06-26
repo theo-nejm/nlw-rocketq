@@ -148,3 +148,29 @@
 .question-wrapper.readed .question-content .user{
     background: var(--grey-blue);
 }
+
+/* No questions ==================================== */
+.no-questions {
+    text-align: center;
+}
+
+.no-questions img {
+    margin-bottom: 1.2rem;
+    margin-top: 4rem;
+}
+
+.no-questions .subtitle {
+    color: var(--black);
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+
+    margin-bottom: 1.2rem;
+}
+
+.no-questions p {
+    color: var(--grey-dark);
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.9rem;
+}
