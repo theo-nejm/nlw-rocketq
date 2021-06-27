@@ -68,3 +68,30 @@
 .modal-wrapper .modal .buttons > .button {
     margin-right: .8rem;
 }
+
+@media screen and (max-width: 700px) {
+    .modal-wrapper .modal {
+        width: min(95%, 60rem);
+        padding: 3.2rem;
+    }
+
+    .modal-wrapper .modal input {
+        width: 70vw;
+    }
+
+    .modal-wrapper .modal .buttons {
+        width: 95vw;
+        left: 0;
+        margin-left: -7.8vw;
+    }
+
+    .modal-wrapper .modal .buttons > button,
+    .modal-wrapper .modal .buttons > .button {
+        padding: 1.3rem 3.2rem;
+    }
+
+    .modal-wrapper .modal .buttons > .button {
+        margin-right: .8rem;
+        padding: 1.3rem 2.4rem;
+    }
+}

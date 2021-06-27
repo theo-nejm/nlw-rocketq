@@ -137,3 +137,37 @@ input, button, .button {
         rotate(0deg)
     }
 }
+
+/* RESPONSIVE ================================================ */
+
+@media screen and (max-width:700px) {    
+    .content {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 11.4rem 1fr;
+
+        grid-template-areas: 
+        'header header'
+        'main main';
+    }
+    
+    main {
+        width: 100vw;
+        grid-area: main;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        padding: 2rem;
+    }
+
+    main .container {
+        margin-top: 10rem;
+    }
+
+    #bg {
+        display: none;
+        background: red;
+    }
+}
