@@ -4,7 +4,7 @@
   "description": "Projeto desenvolvido durante a maratona Discover da Rocketseat para gerenciar perguntas anônimas de usuários direcionados ao dono da página.",
   "main": "src/server.js",
   "scripts": {
-    "start": "nodemon .",
+    "start": "node .",
     "init-db": "node src/db/init.js"
   },
   "repository": {
