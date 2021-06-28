@@ -11,6 +11,11 @@
     justify-content: space-between;
 }
 
+.room-name {
+    overflow: hidden;
+    border-bottom: .2rem solid var(--blue);
+}
+
 #room header h1 {
     font-size: 3.2rem;
     font-family: 'Poppins', sans-serif;
@@ -20,7 +25,24 @@
 
     text-align: center;
 
-    border-bottom: .2rem solid var(--blue);
+    overflow: hidden;
+
+    animation: rise-up .8s ease-out;
+}
+
+@keyframes rise-up {
+    0% {
+        transform: translateY(10vh)
+    }
+    70% {
+        transform: translateY(-1vh);
+    }
+    90% {
+        transform: translateY(.5vh)
+    }
+    100% {
+        transform: translateY(0)
+    }
 }
 
 #room header .buttons {
